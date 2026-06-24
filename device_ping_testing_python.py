@@ -1,7 +1,7 @@
 from zk import ZK
 from datetime import datetime
 
-DEVICE_IP = "192.168.110.111"
+DEVICE_IP = "192.168.77.111"
 DEVICE_PORT = 443
 
 zk = ZK(
