@@ -42,6 +42,30 @@ Access your biometric terminal's network configuration menus via the physical ke
 <img width="1600" height="1180" alt="bb" src="https://github.com/user-attachments/assets/46caad90-3446-45e8-bdb8-3458cdd53504" />
 
 
+
+⏳ HANDLE DEVICE CONFIGURATION
+($method == 'GET') {
+    header("Content-Type: text/plain");
+    
+    // Core Registry Status
+    echo "RegistryCode=NotRegister\n";
+    
+    // ⏳ FIX THE INTERVAL LOOPS: Force heartbeats to a 60-second cycle
+    echo "Delay=120\n";                 // Main check-in interval (60 seconds)
+    echo "ErrorDelay=60\n";            // Retry sleep period if a disconnect occurs
+    echo "TransInterval=1\n";          // Queue transmission sweep rate
+    echo "TransTimes=00:00;23:59\n";   
+    echo "GetOption=1\n";
+    
+    // 🇧🇩 FIX THE TIME OFFSET: Standardized PUSH protocol codes for Dhaka (GMT+6)
+    echo "TimeZone=6\n";               // Standard hour offset indicator
+    echo "SetOption TimeZone=6\n";     // Secondary parameter block override
+    echo "SET OPTIONS TimeZone=360\n"; // Fallback rule tracking calculation (in minutes: 6 * 60)
+    
+    exit();
+} 
+
+
 ## 🗄️ Database Setup Script (`database.sql`)
 
 Execute this SQL blueprint to configure your high-velocity ledger table with optimization indexes:
