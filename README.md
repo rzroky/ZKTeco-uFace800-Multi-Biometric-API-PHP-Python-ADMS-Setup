@@ -36,6 +36,7 @@ Access your biometric terminal's network configuration menus via the physical ke
 5. TCP COMM.PORT :: 443 or 80 (for https 443, http 80)
 6. DHCP :: OFF
 
+blob:https://web.whatsapp.com/d160f719-eaf2-44d7-bc0d-10e7af670003
 
 ## 🗄️ Database Setup Script (`database.sql`)
 
