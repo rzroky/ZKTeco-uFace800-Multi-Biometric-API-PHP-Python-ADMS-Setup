@@ -32,9 +32,9 @@ Access your biometric terminal's network configuration menus via the physical ke
 
 Access your biometric terminal's network configuration menus via the physical keypad interface (Comm. -> Ethernet Setting) and supply these properties:
 
-1. IP ADDRESS:: 192.168.110.111
+1. IP ADDRESS:: 192.168.77.111
 2. SUBNET MASK:: 255.255.255.0
-3. GATEWAY :: 192.168.110.1
+3. GATEWAY :: 192.168.77.1
 4. DNS :: 1.1.1.1 or 8.8.8.8
 5. TCP COMM.PORT :: 443 or 80 (for https 443, http 80)
 6. DHCP :: OFF
