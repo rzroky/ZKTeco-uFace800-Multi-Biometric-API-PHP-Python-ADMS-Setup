@@ -6,6 +6,9 @@ ZKTeco Multi-Biometric Device API | PHP + Python | ADMS Setup. IP Setup, DNS Set
 
 An industrial-grade, native PHP implementation of the ZKTeco ADMS (Automatic Data Master Server) protocol designed to handle simultaneous, real-time log ingestion from multiple biometric devices (tested with 8+ machines syncing simultaneously every few seconds).
 
+## WHY PYTHON CODE ? 
+ITs just for ping device IP and only view data from device log. Fully for testing you can use python code, otherwise you do not need python code into project.
+
 ## ✨ Key Technical Enhancements
 * **Anti-Collision Transaction Architecture:** Utilizes explicit InnoDB row-level transaction blocks (`beginTransaction` / `commit`) to prevent database multi-device read/write deadlocks.
 * **Duplicate Elimination Protection Matrix:** Leverages MySQL compound unique keys combined with `INSERT IGNORE` processing logic to safely disregard connection duplicate resends.
