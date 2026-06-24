@@ -25,6 +25,9 @@ Access your biometric terminal's network configuration menus via the physical ke
 3. Server Address: http://yourdomain.com/public/api.php (For normal production logs)
 4. Enable Proxy Server :: OFF
 
+<img width="1600" height="1401" alt="aa" src="https://github.com/user-attachments/assets/00f95c1b-edee-4212-a532-b3d0251f2ec0" />
+
+
 💻 NETWORK Settings
 
 Access your biometric terminal's network configuration menus via the physical keypad interface (Comm. -> Ethernet Setting) and supply these properties:
@@ -36,7 +39,8 @@ Access your biometric terminal's network configuration menus via the physical ke
 5. TCP COMM.PORT :: 443 or 80 (for https 443, http 80)
 6. DHCP :: OFF
 
-blob:https://web.whatsapp.com/d160f719-eaf2-44d7-bc0d-10e7af670003
+<img width="1600" height="1180" alt="bb" src="https://github.com/user-attachments/assets/46caad90-3446-45e8-bdb8-3458cdd53504" />
+
 
 ## 🗄️ Database Setup Script (`database.sql`)
 
